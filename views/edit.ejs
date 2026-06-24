@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Content</title>
+    
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+     <%- include("includes/header") %>
+     <div class="edit">
+         <h2>Edit Your Post:</h2>
+     </div>
+
+     <form method = "post" action="/posts/<%=post.id%>?_method=PATCH">
+         <textarea rows="10" cols="35" name="content"><%=post.content%></textarea>
+        <button>Submit</button>
+
+     </form>
+   
+      
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
