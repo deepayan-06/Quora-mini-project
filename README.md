@@ -10,7 +10,7 @@ View all questions/posts
 Edit existing posts
 Delete posts
 Simple and user-friendly interface --
-Languages Used :
+# Languages Used :
 HTML
 CSS
 JavaScript
@@ -18,16 +18,16 @@ Node.js
 Express.js
 EJS (if used)
 CRUD Operations
-Create
+# Create
 Users can add a new question/post.
 
-Read
+# Read
 Users can view all available questions/posts.
 
-Update
+# Update
 Users can edit their existing questions/posts.
 
-Delete
+# Delete
 Users can remove questions/posts.
 
 Project Structure
