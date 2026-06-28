@@ -17,7 +17,7 @@ let posts =[
     id : uuidv4(),
     username : "deepayan",
     Image : "https://images.unsplash.com/photo-1769760992281-fdc7d7fd883c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D",
-     content: "You are not in the mountains. The mountains are in you. — John Muir",
+    content: "You are not in the mountains. The mountains are in you. — John Muir",
 },
 
 {
@@ -31,24 +31,23 @@ let posts =[
     id : uuidv4(),
     username : "bob",
     Image : "https://plus.unsplash.com/premium_photo-1769376722557-983803523e09?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D",
-     content: "We are not human beings having a spiritual experience. We are spiritual beings having a human experience. — Pierre Teilhard de Chardin",
+    content: "We are not human beings having a spiritual experience. We are spiritual beings having a human experience. — Pierre Teilhard de Chardin",
 },
 ]
 
-//Index Route
+//Index-Route
 app.get("/posts", (req, res) => {
     res.render("index.ejs",{posts});
 })
 
 
-
-//create Route  
+//create--Route  
 app.get("/posts/new",(req, res) => {
     res.render("new.ejs");
 })
 
 
-//create Route -- save to the array
+//create Route--save to the array
 app.post("/posts",(req, res) => {
     let{username , content, Image } = req.body;
     let id = uuidv4();
@@ -56,7 +55,7 @@ app.post("/posts",(req, res) => {
     res.redirect("/posts");
 })
 
-//Show Route
+//Show --Route
 app.get("/posts/:id", (req, res) => {
     let {id} = req.params;
     let post = posts.find((p) => id === p.id);
