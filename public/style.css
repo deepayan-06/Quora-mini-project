@@ -103,7 +103,7 @@ font-weight: 500;
     margin-top: 50px;
 }
 
-/* Form Card */
+/* Form-Card */
 .post-form{
     width: 450px;
     background: white;
@@ -138,7 +138,7 @@ font-weight: 500;
     font-size: 16px;
 }
 
-/* Focus Effect */
+/* Focus-Effect */
 .post-form input:focus,
 .post-form textarea:focus{
     outline: none;
