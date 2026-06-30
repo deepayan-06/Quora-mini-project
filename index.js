@@ -41,7 +41,7 @@ app.get("/posts", (req, res) => {
 })
 
 
-//create--Route  
+//create-Route  
 app.get("/posts/new",(req, res) => {
     res.render("new.ejs");
 })
