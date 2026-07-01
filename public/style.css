@@ -3,8 +3,6 @@ body{
     background-color: #121212;
     font-family: Arial, sans-serif;
 }
-
-
 .container {
     display: flex;
     flex-direction: column;  
@@ -12,7 +10,6 @@ body{
     gap: 20px;   
     margin-top: 20px;            
 }
-
 .post{
     background-color: rgb(95, 93, 93);
     width: 600px;
